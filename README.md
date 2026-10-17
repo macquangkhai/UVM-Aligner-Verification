@@ -11,7 +11,7 @@ This repository contains a modular **UVM 1.2** verification environment and a re
 
 ---
 
-## 🏗️ Verification Architecture
+##  Verification Architecture
 
 The testbench is structured following standard UVM methodology:
 
@@ -70,7 +70,7 @@ Built with 3 covergroups tracking:
 
 ---
 
-## 📊 Verification Results (Extracted from Cadence Xcelium Log)
+##  Verification Results (Extracted from Cadence Xcelium Log)
 
 Simulations were executed using **Cadence Xcelium 25.03 / 20.09** on testcase `cfs_algn_test_reg_access`:
 
@@ -95,22 +95,9 @@ Simulations were executed using **Cadence Xcelium 25.03 / 20.09** on testcase `c
 
 ---
 
-## 🚀 How to Run Simulation
+## How to Run Simulation
 
-### Method 1: Using Cadence Xcelium (Command Line)
-Execute the simulation script:
-```bash
-chmod +x run.sh
-./run.sh
-```
-
-Or run directly using `xrun`:
-```bash
-xrun -Q -unbuffered -timescale 1ns/1ns -sysv -coverage functional -access +rw \
-     +UVM_TESTNAME=cfs_algn_test_reg_access design.sv testbench.sv
-```
-
-### Method 2: Running on EDA Playground
+### Method: Running on EDA Playground
 1. Upload/copy the files into [EDA Playground](https://www.edaplayground.com).
 2. Set **Tools & Simulators** to **Cadence Xcelium 20.09** (or **Synopsys VCS**).
 3. Set **Compile Options**: `-timescale 1ns/1ns -sysv`.
