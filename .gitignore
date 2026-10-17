@@ -1,0 +1,20 @@
+# Video files
+*.mp4
+
+# Simulator & temporary files
+*.log
+*.history
+*.key
+*.vcd
+*.shm/
+*.trn/
+*.dsn/
+xcelium.d/
+.simvision/
+cov_work/
+INCA_libs/
+work/
+
+# Archives
+*.zip
+*.tar.gz
